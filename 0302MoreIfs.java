@@ -1,5 +1,5 @@
 // Carrie Krueger
-// 9-29-20
+// 3-4-21
 // Efficiently using if-statements and multiple conditionals
 
 import java.util.Scanner;
@@ -99,9 +99,32 @@ public class MoreIfs {
             System.out.println("Really big number!");
         }
         
+        // boolean logic operators: and/or 
+        
+        num = 32; 
+        
+        // OR
+        if(num >= 40 || num <= 10) {
+            System.out.println("You win!!!");
+        }
+        
+        // AND ** short circuit **
+        if(num >= 40 && num <= 60) {
+            System.out.println("num is in range!");
+        }
+        
+        
+        /* 
+        Another option: SWITCH STATEMENTS 
+        Textbook 6.3 
+        Pros and Cons:
+        -if/else can handle ranges
+        -switch statements can only handle exact values
+        -switch statements can only be used with certain primitives and Strings
+        -if/else can get messy with { }, more prone to errors
+        -(syntax or logic)
+        */
+        
 
-        
-        
-        
     }
 }
