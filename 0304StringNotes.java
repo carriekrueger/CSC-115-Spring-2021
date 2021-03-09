@@ -1,5 +1,5 @@
 // Carrie Krueger
-// 10-1-20
+// 3-9-21
 // Some things we can do with Strings
 
 
@@ -64,7 +64,48 @@ public class StringNotes {
         System.out.println(name); // GRACE
         
         System.out.println(); 
-
+        
+        String s1 = "Star Trek";
+        String s2 = "Star Wars";
+        
+        // substring(position) returns a part of the String
+        // from position to the end 
+        
+        System.out.println(s1.substring(5)); // Trek
+        
+        // substring(start, end) returns a part of the String
+        // from start to end - 1 (end not included)
+        
+        System.out.println(s2.substring(5,8)); // War
+        
+        System.out.println();
+        
+        // indexOf(character) returns the first index of that character
+        // in the String
+        
+        System.out.println(s1.indexOf('T')); // 5
+        System.out.println(s1.indexOf('Z')); // -1
+        
+        // indexOf(String) returns the first index of a String in the String
+        
+        System.out.println(s1.indexOf("Star")); // 0
+        
+        System.out.println();
+        
+        
+        // comparing two Strings: DON'T use ==
+        // .equals method
+        
+        System.out.println(s1.equals(s2)); // false 
+        System.out.println(s2.equals(s2)); // true 
+        
+        String s3 = "STAR TREK";
+        
+        System.out.println(s1.equalsIgnoreCase(s3)); // true
+        
+         
+    
+           
         
     }
 }
