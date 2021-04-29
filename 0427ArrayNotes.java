@@ -1,5 +1,5 @@
 // Carrie Krueger
-// 11-24-20
+// 4-29-21
 // All about arrays 
 
 public class ArrayNotes {
@@ -77,14 +77,66 @@ public class ArrayNotes {
         System.out.println(temps[3]); // 26
         
         
+        // print the first element in the array - position/index 0
+        System.out.println("First: " + temps[0]);
         
+        // print last element in this array - position/index 6 -- 7th element
+        System.out.println("Last: " + temps[6]);
         
+        // position 7? 
         
+        // System.out.println(temps[7]); // ArrayIndexOutOfBounds
+                                         // Exception
+                                         
+        // print the last element in any array? position length - 1
+         System.out.println("Last: " + temps[temps.length - 1]);
         
+        // how to print an array? 
         
+        System.out.println(temps);  //prints memory address 
+        
+        // use a for loop to print every element 
+        for(int i = 0; i < temps.length; i++){
+            System.out.print(temps[i]+ " ");
+        }
+        
+        System.out.println(); // next thing prints on next line
+        
+        // Arrays act just like Strings!
+        String s = "abcdefg";  // 7 characters
+        
+        // Strings -> length method, arrays -> variable
+        System.out.println(s.length()); // 7
+        
+        System.out.println(s.charAt(0));  // a
+        System.out.println(s.charAt(6));  // g
+        //System.out.println(s.charAt(7));  // StringIndexOutofBounds error
+        System.out.println(s.charAt(s.length() - 1)); // g
+        
+        // sending an array as a parameter to a method
+        
+        printArray(temps);
         
     }
+    
+    
+    // This method takes an array and prints the contents
+    
+    // NOTE: If you send an array as a parameter to a method, 
+    // and change the array inside the method,
+    // then the changes will "stick" when the method is done 
+    // (not changing anything here)
+    public static void printArray(int[] a){
+         // use a for loop to print every element 
+        for(int i = 0; i < a.length; i++){
+            System.out.print(a[i]+ " ");
+        }
+        
+        System.out.println(); //
+    }
 }
+       
 
 
-      
+
+
