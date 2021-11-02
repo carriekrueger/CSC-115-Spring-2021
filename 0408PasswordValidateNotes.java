@@ -11,9 +11,9 @@ public class PasswordValidateNotes {
 	    // input is the password that the user typed in to check 
 	    
 	    if(validatePassword(input) == true) {
-	           System.out.println("Password valid");
+	    	System.out.println("Password valid");
 	    } else {
-	           System.out.println("Password invalid");
+	        System.out.println("Password invalid");
 	    }
 	}
 	
